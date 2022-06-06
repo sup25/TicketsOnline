@@ -2,9 +2,9 @@ from multiprocessing import context
 from django.shortcuts import render
 
 # Create your views here.
-def stores(request):
+def index(request):
     context = {}
-    return render(request, 'stores/stores.html', context)
+    return render(request, 'stores/index.html', context)
 
 def carts(request):
     context = {}

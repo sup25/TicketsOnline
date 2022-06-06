@@ -1,0 +1,348 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href={% static 'css/style.css' %}>
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+
+    <title>TICKETS ONLINE</title>
+  </head>
+  <body>
+  	<section id="back">
+  		<div class="back">
+  	    <div class="container">
+	    	<nav class="navbar navbar-expand-lg navbar-light bg-light wow fadeIn">
+			  <a class="navbar-brand" href="#">Ticket Online</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			    <ul class="navbar-nav ml-auto">
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Sports</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Concert</a>
+			      </li>
+			      <li class="nav-item">
+			        <a class="nav-link" href="#">Theater</a>
+			      </li>
+			    </ul>
+			    <form class="form-inline my-2 my-lg-0">
+			      <button class="btn btn-outline-success my-2 my-sm-0" type="button" data-toggle="modal" data-target="#exampleModal">Book Ticket</button>
+			    </form>
+			  </div>
+			</nav>
+
+			<div class="intro wow zoomIn" data-wow-delay="0.4s">
+				Now Buy Your <span>Ticket</span> Online<br>
+				<span>Safe, Easy and Fast</span>
+			</div>
+			<div class="arrow">
+				<i class="fa fa-angle-down" aria-hidden="true"></i>
+		    </div>
+		</div>
+		</div>
+	</section>
+
+	<!-- pop out of bookticket starts-->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h4 class="modal-title" id="exampleModalLabel">Sign In To Book Tickets</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	       <input type="email" name="em" placeholder="Enter Your Email">
+	       <input type="password" name="em" placeholder="Enter Your Password"><br><br>
+	       <button type="button" class="btn btn-primary btn-lg btn-block"> Sign in with <i class="fa fa-facebook-square" aria-hidden="true"></i> </button><br>
+	       <p>OR</p>
+	       <button type="button" class="btn btn-outline-primary btn-lg btn-block"> Sign in with <i class="fa fa-google-plus" aria-hidden="true"></i> </button><br>
+	       <p>Click Here to<a href="#"> Register</a></p>
+	       
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary">Sign In</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- pop out of bookticket ends-->
+
+
+	<div class="search">
+		<div class="container wow flipInX" data-wow-duration="2s">
+		<div class="row item1">
+			<div class="col-md-3">
+				Find <span>Your</span> Seats
+			</div>
+			<div class="col-md-6">
+				<input type="text" name="s1" placeholder="Search Tickets For Concert, Tour, Theater....">
+			</div>
+			<div class="col-md-3">
+			 <i class="fa fa-location-arrow" aria-hidden="true"></i>All Location
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<section id="about">
+		<div class="about">
+			<div class="container">
+				<div class="row item2">
+					<div class="col-md-4 wow slideInLeft">
+						
+							<div class="part"><h3><i class="fa fa-line-chart" aria-hidden="true"></i> Trending Event</h3></div>
+							<div class="part"> <img src="{% static 'image/pic1.jpg' %}" width="80px" height="50px" > <h4><a href="#"> NBA Tickets</a></h4>
+								<p>Cheer on your favourite team.</p>	
+							</div>
+							<div class="part"> <img src="{% static 'image/pic26.jpg' %}" width="80px" height="50px" > <h4><a href="#"> <span>Bullets For My Valentine Tickets</span></a></h4>
+								<p>Follow Swopna in his musical journey.</p>	
+							</div>
+							<div class="part"> <img src="{% static 'image/pic25.jpg' %}" width="80px" height="50px" > <h4><a href="#"> Meallica Tickets</a></h4>
+								<p>Follow them in their musical journey.</p>	
+							</div>
+							<div class="part"> <img src="{% static 'image/pic4.jpg' %}" width="80px" height="50px" > <h4><a href="#"> Eminem Tickets</a></h4>
+								<p>Follow Eminem in his musical journey.</p>	
+							</div>
+							<div class="btn btn-success">
+								View More
+							</div>
+					    
+					</div>
+					<div class="col-md-4 wow fadeInUp">
+						
+							<div class="part"><h3><i class="fa fa-map-marker"aria-hidden="true"></i> <span>Comming Up</span> Near You</h3></div>
+							<div class="part">
+								<input type="text" name="s2" placeholder=" Search For Location">
+							</div>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7066.02082662633!2d85.3422759892145!3d27.686073030807286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198d99470043%3A0x167d008efb47d64c!2sBroadway+Infosys+Nepal!5e0!3m2!1sen!2snp!4v1542806823507" width="100%" height="65%" frameborder="0" style="border:0" allowfullscreen></iframe>
+						
+					</div>
+					<div class="col-md-4 wow slideInRight">
+						
+							<div class="part"><h3>Comming Up Event</h3></div>
+							<div class="part"> <img src="{% static 'image/pic5.jpg' %}" width="80px" height="50px" > <h4><a href="#"> Ariana Grande Tickets</a></h4>
+								<p>Be ready for her Sweetner tour</p>	
+							</div>
+							<div class="part"> <img src="{% static 'image/pic6.jpg' %}" width="80px" height="50px" > <h4><a href="#"> Cardi B Tickets</a></h4>
+								<p>Be ready for her upcoming concert.</p>	
+							</div>
+							<div class="part"> <img src="{% static 'image/pic7.jpg' %}" width="80px" height="50px" > <h4><a href="#"> Little Mix Tickets</a></h4>
+								<p>Sing with them in their LM5 tour</p>	
+							</div>
+							<div class="part"> <img src="{% static 'image/pic8.jpg' %}" width="80px" height="50px" > <h4><a href="#"> Future Tickets</a></h4>
+								<p>Enjoy future's W.O.D tour concert</p>	
+							</div>
+							<div class="btn btn-success">
+								View More
+							</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="place">
+		<div class="container">
+			<div class="top  wow slideInLeft">
+				<h2>Tickets For popular Places</h2>
+			</div>
+			<div class="row item3">
+				<div class="col-md-3 wow slideInUp">
+					<img src="{% static 'image/pic9.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des">
+						<a href="#">Bhaktapur Durbar Square</a>
+					</div>
+				</div>
+				<div class="col-md-3 wow slideInUp" data-wow-delay="0.1s">
+					<img src="{% static 'image/pic10.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des">
+						<a href="#">Avation Musuem</a>
+					</div>
+				</div>
+				<div class="col-md-3 wow slideInUp" data-wow-delay="0.2s">
+					<img src="{% static 'image/pic11.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des">
+						<a href="#">Narayan Hiti Museum</a>
+					</div>
+				</div>
+				<div class="col-md-3 wow slideInUp" data-wow-delay="0.3s">
+					<img src="{% static 'image/pic12.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des">
+						<a href="#">National Art Musuem</a>
+					</div>
+				</div>
+			</div>
+			<div class="btn btn-success">
+								View More
+							</div>
+
+
+
+			<div class="top diff wow slideInRight">
+				<h2>Take a Trip</h2>
+			</div>
+			<div class="row item3 wow slideInUp" data-wow-delay="0.2s">
+				<div class="col-md-2">
+					<img src="{% static 'image/pic13.jpg' %}" width="170px" height="150px;" ;>
+					<div class="des1">
+						<a href="#">Pokhara</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<img src="{% static 'image/pic14.jpg' %}" width="170px" height="150px;" ;>
+					<div class="des1">
+						<a href="#">Kathmandu</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<img src="{% static 'image/pic15.jpg' %}" width="170px" height="150px;" ;>
+					<div class="des1">
+						<a href="#">Bhaktapur</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<img src="{% static 'image/pic16.jpg' %}" width="170px" height="150px;" ;>
+					<div class="des1">
+						<a href="#">New York</a>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<img src="{% static 'image/pic17.jpg' %}" width="170px" height="150px;" ;>
+					<div class="des1">
+						<a href="#">California</a>
+					</div>
+				</div>	
+				<div class="col-md-2">
+					<img src="{% static 'image/pic18.jpg' %}" width="170px" height="150px;" ;>
+					<div class="des1">
+						<a href="#">Solukhumbu</a>
+					</div>
+				</div>
+			</div>
+			<div class="btn btn-success">
+								View More
+			</div>
+
+
+			<div class="top wow slideInLeft">
+				<h2>What are you looking for?</h2>
+			</div>
+			<div class="row item3">
+				<div class="col-md-3 wow slideInLeft" data-wow-delay="0.2s">
+					<img src="{% static 'image/pic19.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des1">
+						<a href="#">Concert</a>
+					</div>
+				</div>
+				<div class="col-md-3 wow slideInLeft">
+					<img src="{% static 'image/pic20.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des1">
+						<a href="#">Sports</a>
+					</div>
+				</div>
+				<div class="col-md-3 wow slideInRight">
+					<img src="{% static 'image/pic21.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des1">
+						<a href="#">Festival</a>
+					</div>
+				</div>
+				<div class="col-md-3 wow slideInRight" data-wow-delay="0.2s">
+					<img src="{% static 'image/pic22.jpg' %}" width="250px" height="200px;" ;>
+					<div class="des1">
+						<a href="#">Movie / Threater</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="app">
+		<div class="container wow zoomIn">
+			<div class="row item4">
+				<div class="col-md-6">
+					<h2>Ticket Online On iphone</h2>
+					<div class="circle">
+						<i class="fa fa-apple" aria-hidden="true"></i>
+					</div>
+					<p><a href="#"> Get Ticket Online App in Appstore</a></p>
+				</div>
+				<div class="col-md-6">
+					<h2>Ticket Online On Android</h2>
+					<div class="circle">
+						<i class="fa fa-android" aria-hidden="true"></i>
+					</div>
+					<p><a href="#"> Get Ticket Online App in PlayStore</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="row item5">
+				<div class="col-md-4">
+					<h4>Menu</h4>
+					<a href="#">Home</a><br>
+					<a href="#">About Us</a><br>
+					<a href="#">Partners</a><br>
+					<a href="#">Contact Us</a><br>
+				</div>
+				<div class="col-md-4">
+					<h4>Follow Us</h4>
+					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a><br>
+					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a><br>
+					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a><br>
+					<a href="#"><i class="fa fa-tumblr-square" aria-hidden="true"></i> Tumblr</a><br>
+					<a href="#"><i class="fa fa-pinterest-square" aria-hidden="true"></i> Pintrest</a><br>
+				</div>
+				<div class="col-md-4">
+					<h4>Download</h4>
+					<a href="#"><i class="fa fa-android" aria-hidden="true"></i> Android</a><br>
+					<a href="#"><i class="fa fa-apple" aria-hidden="true"></i> Ios App</a><br>
+						<br>
+					<h4>Need Help?</h4>
+					<a href="#"><i class="fa fa-commenting" aria-hidden="true"></i> Visit Contact Page</a><br>
+					<a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> View FAQ</a><br>
+				</div>
+			</div>
+
+			<div class="copyright">
+				© Copyright Act Law 2018 
+			</div>
+			<div class="cond">
+				<a href="#"> Condition</a> &nbsp;&nbsp; <a href="#"> Privacy Policy </a>
+			</div>
+
+		</div>
+	</footer>
+	
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+     <script src="js/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+  </body>
+</html>
